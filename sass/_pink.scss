@@ -1,0 +1,23 @@
+@mixin pinky($text-color){
+  margin: 0;
+  height: 64px;
+  background-color: pink;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  figure{
+    height: $img-height;
+    img{
+      height: $img-height;
+    }
+  }
+  menu{
+    display: flex;
+    align-items: center;
+    *{
+      margin: 5px;
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}
