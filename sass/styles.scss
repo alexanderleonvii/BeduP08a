@@ -1,0 +1,68 @@
+@import "variables";
+@import "pink";
+@import "init";
+@import "greedy";
+
+header{
+ @include pinky(gray);
+}
+
+footer{
+  @include pinky(yellow);
+}
+
+.container{
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: $desk-mask;
+  grid-gap: 10px;
+  div{
+    border: 1px solid pink;
+  }
+}
+section{
+
+  img{
+    width: 100%;
+  }
+  div{
+    h2{
+      margin: 5px 0;
+      color: palevioletred;
+      text-align: center;
+    }
+    p{
+      padding: 10px;
+      text-align: justify;
+    }
+  }
+}
+
+.ingredientes{
+  @include greed(i);
+}
+
+.preparacion{
+  @include greed(p);
+}
+ 
+.img1{
+  @include greed(i1);
+}
+
+.img2{
+  @include greed(i2);
+}
+
+.img3{
+  @include greed(i3);
+}
+
+
+
+
+
+
+
